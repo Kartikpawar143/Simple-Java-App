@@ -6,6 +6,8 @@ WORKDIR /app
 
 # Copining the code from your HOST machin to your container
 COPY . .
+# also we can use
+# COPY src/Main.java /app/Main.java
 
 # Compile the application code
 RUN javac src/Main.java
